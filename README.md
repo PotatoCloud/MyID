@@ -7,8 +7,7 @@ As said in the description, he is a good id generation service
 Don't worry, we provide an example 😂
 
 ```http request
-###
-GRPC <YOUR_HOST>/schemes.MyID/GenerateID
+GRPC YOUR_HOST/schemes.MyID/GenerateID
 
 {
   "DC": 1,
