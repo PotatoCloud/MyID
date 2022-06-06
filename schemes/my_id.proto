@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package schemes;
+
+option go_package = "schemes/";
+
+message IDRequest {
+  uint32 DC = 1;
+  uint64 worker_id = 2;
+  uint64 request_id = 3;
+}
+
+message IDReply {
+  int64 id = 1;
+  uint64 timestamp = 2;
+  uint64 reply_id = 3;
+};
+
+service MyID {
+  rpc GenerateID(IDRequest) returns (IDReply) {}
+}
