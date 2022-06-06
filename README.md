@@ -1,5 +1,7 @@
 # MyID
 
+[简体中文](README_zh.md)
+
 As said in the description, he is a good id generation service
 
 ### How to call the gRPC interface in MyID?
